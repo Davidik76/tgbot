@@ -9,13 +9,13 @@ except ImportError:
     pass
 
 # Токен бота (получите у @BotFather)
-BOT_TOKEN: Optional[str] = os.getenv('BOT_TOKEN')
+BOT_TOKEN: Optional[str] = os.getenv('BOT_TOKEN', '5711216312:AAHIk8FBpar0i69huSvwg1fzc0-zvx-xdN4')
 
 # ID администратора (ваш Telegram ID)
 try:
-    ADMIN_ID: Optional[int] = int(os.getenv('ADMIN_ID', '0'))
+    ADMIN_ID: Optional[int] = int(os.getenv('ADMIN_ID', '1147574990'))
 except ValueError:
-    ADMIN_ID: Optional[int] = None
+    ADMIN_ID: Optional[int] = 1147574990
 
 # Настройки базы данных
 DATABASE_PATH = 'bot_database.db'
